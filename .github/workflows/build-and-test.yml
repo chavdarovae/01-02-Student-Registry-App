@@ -44,7 +44,7 @@ jobs:
       - name: Build application
         run: npm run build --if-present
       - name: Test application
-        run: npm audit test --if-present
+        run: npm audit --force
       
       
     
