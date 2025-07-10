@@ -60,9 +60,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
-        uses: JorgeLNJunior/render-deploy@v1.4.5
+        uses: johnbeynon/render-deploy-action@v0.0.8
         with:
           service-id: ${{ secrets.SERVICE_ID }}
           api-key: ${{ secrets.API_TOKEN }}
-          wait_deploy: true
+          wait-for-success: true
       
